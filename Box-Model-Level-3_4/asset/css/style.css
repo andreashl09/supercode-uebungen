@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Custom_Leckerli_One;
+  src: url("../fonts/leckerli-one/LeckerliOne-Regular.otf");
+}
+
+@font-face {
+  font-family: Custom_Lato;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+html {
+  font-family: Custom_Lato, Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  background-color: #36b5b0;
+  height: 32vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+header h1 {
+  font-family: Custom_Leckerli_One, Arial, Helvetica, sans-serif;
+  font-size: 6.4rem;
+  color: white;
+  transition: 2s;
+  transform: rotate(-10deg);
+}
+
+header h1:hover {
+  transform: rotate(15deg);
+}
+
+main section div,
+main section article {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+main section img {
+  width: 33vw;
+  border: 3px solid white;
+  outline: 1px black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px gray;
+  margin: 20px;
+}
+
+main section article h2 {
+  display: block;
+  background-color: blue;
+}
+
+main section input {
+  background-color: #fcf5b0;
+  border: none;
+}
+
+main section:nth-of-type(2) {
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #fcf5b0;
+  width: 95vw;
+  height: 280px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+label {
+  background-color: #fcf5b0;
+  font-size: 3rem;
+}
+
+label::first-letter {
+  font-size: 4rem;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+footer {
+  width: 100vw;
+  background-color: #36b5b0;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
