@@ -1,0 +1,93 @@
+@font-face {
+  font-family: CustomGilda;
+  src: url("../fonts/Gilda_Display/GildaDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: CustomMavenPro;
+  src: url("../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf");
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  height: 100vh;
+  background-color: rgb(51, 51, 51);
+  background-size: 100vh;
+  color: gray;
+  margin-bottom: 200px;
+}
+
+header section article {
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 3em;
+  font-family: CustomMavenPro, Arial, Helvetica, sans-serif;
+  color: grey;
+  font-weight: 500;
+}
+
+header section:nth-of-type(2) {
+  border-radius: 8px;
+  margin: 150px auto;
+  width: 300px;
+  height: 227px;
+  background: linear-gradient(45deg, #ff00ff 15%, #2727f0 58%, #48cefa 100%);
+  color: white;
+  padding: 15px;
+}
+
+header section h2 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 150px;
+  height: 153px;
+  font-family: CustomGilda, Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+}
+
+header section p {
+  font-size: 16px;
+  font-family: CustomMavenPro, Arial, Helvetica, sans-serif;
+  width: 237px;
+  text-align: center;
+  font-weight: 100;
+  margin: auto;
+}
+
+header section:nth-last-of-type(1):hover {
+  background: linear-gradient(45deg, #48cefa 15%, #2727f0 58%, #ff00ff 100%);
+}
+
+header nav {
+  text-align: right;
+  margin-right: 10px;
+}
+
+header nav ul {
+  color: grey;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-bottom: 20px;
+  font-family: CustomMavenPro, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+header nav ul li:hover {
+  color: white;
+  text-shadow: 0 0 10px rgb(212, 210, 210);
+}

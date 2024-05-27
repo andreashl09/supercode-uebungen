@@ -1,0 +1,53 @@
+@font-face {
+  font-family: CustomChelsea;
+  src: url("../fonts/Chelsea_Market/ChelseaMarket-Regular.ttf");
+}
+
+@font-face {
+  font-family: CustomFredoka;
+  src: url("../fonts/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: CustomPacifico;
+  src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: CustomPress_Start_2P;
+  src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 70vw;
+}
+
+h1 {
+  font-family: CustomPress_Start_2P;
+  background-color: greenyellow;
+  font-size: 50;
+  line-height: 50px;
+  text-align: center;
+}
+
+p {
+  font-family: CustomPacifico;
+}
+
+p em {
+  text-shadow: 2px -2px 0 red;
+}
+
+p strong {
+  font-family: CustomFredoka, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: smaller;
+}
+
+a {
+  font-family: CustomChelsea;
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}

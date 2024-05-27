@@ -1,0 +1,13 @@
+section a:hover {
+  text-decoration: none;
+  background-color: #7e3661;
+}
+
+section a:visited {
+  counter-reset: #fcb941;
+}
+
+section a:active {
+  font-size: 3em;
+  background-color: white;
+}

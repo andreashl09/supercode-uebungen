@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("https://fastly.picsum.photos/id/973/800/600.jpg?hmac=nXUhRIdtgG99uPs6XNu-uaO49d5-yUOUjcZ7NmtHujY");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div {
+  text-align: right;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.197);
+  height: 20px;
+  padding: 10px;
+  margin: 0px;
+}
+
+a {
+  padding-right: 10px;
+  color: white;
+  height: 50px;
+  display: box;
+  text-decoration: none;
+}

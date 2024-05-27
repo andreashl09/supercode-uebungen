@@ -1,0 +1,43 @@
+@font-face {
+  font-family: CustomChelsea;
+  src: url("../fonts/Chelsea_Market/ChelseaMarket-Regular.ttf");
+}
+
+@font-face {
+  font-family: CustomFredoka;
+  src: url("../fonts/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: CustomPacifico;
+  src: url("../fonts/Pacifico/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: CustomPress_Start_2P;
+  src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background: url("../img/chalo-gallardo-thMDYaK7F7w-unsplash.jpg") no-repeat;
+  background-size: 100vw;
+}
+
+section {
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.344);
+  width: 50%;
+}
+
+section p {
+  padding: 20px;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
