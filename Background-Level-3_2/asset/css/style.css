@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* color: white; */
+  font-size: 12px;
+}
+
+/* allgemein ausrichten und Größe festlegen und Hintergrundfarbe festgelegt*/
+.backgrounds {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background: #ffff00;
+  padding: 5px;
+}
+
+/* zweites div über Class backgroundImg stylen */
+/* Hintergrundfarbe als Fallback  */
+
+.backgroundImg {
+  background: rgb(248, 187, 195);
+  background-image: url("../img/mike-dorner-sf_1ZDA1YFw-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* drittes div über Class backgroundGradient stylen */
+.backgroundGradient {
+  background: rgb(248, 187, 195);
+  background: linear-gradient(
+    270deg,
+    rgba(248, 187, 195, 1) 0%,
+    rgba(255, 255, 0, 1) 95%
+  );
+}
