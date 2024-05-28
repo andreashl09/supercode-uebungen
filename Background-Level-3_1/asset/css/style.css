@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background-image: url("../img/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
