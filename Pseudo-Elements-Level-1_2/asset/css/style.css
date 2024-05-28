@@ -1,0 +1,101 @@
+@font-face {
+  font-family: custom_Montserra;
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: custom_Montserra, Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+h3::first-letter {
+  font-size: xx-large;
+  /* color: rgb(64, 147, 118); */
+  color: #a020f0;
+}
+
+ul {
+  margin: 10px 50px;
+}
+
+ul li::first-letter {
+  font-size: xx-large;
+  font-weight: 500;
+}
+
+ul li:nth-of-type(1):first-letter {
+  color: #00bfff;
+  text-decoration: 1px overline #00bfff;
+}
+ul li:nth-of-type(2)::first-letter {
+  color: #32cd32;
+  text-decoration: 1px underline #32cd32;
+}
+
+ul li:nth-of-type(3)::first-letter {
+  color: #00bfff;
+  text-decoration: 1px line-through #00bfff;
+}
+
+ul li:nth-of-type(3) {
+  text-decoration: line-through;
+}
+
+/* Section <p> margin */
+
+section p {
+  margin-bottom: 15px;
+}
+
+/* Section erstes <p> stylen */
+
+section p:nth-of-type(1) {
+  color: #483d8b;
+  font-size: 20px;
+  text-indent: 60px;
+  font-weight: bolder;
+}
+
+section p:nth-of-type(1)::first-line {
+  font-weight: bold;
+}
+
+/* Section zweites, fünftes und siebtes <p> über Class firstLetterBig stylen */
+
+.firstLetterBig {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.firstLetterBig::first-letter {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+.firstLetterBig::first-line {
+  color: #32cd32;
+  font-weight: bold;
+}
+
+/* Section drittes und fünftes <p> über Class smallLetter stylen */
+
+.smallLetter {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.smallLetter::first-letter {
+  font-size: 20px;
+  color: red;
+}
+
+.smallLetter::first-line {
+  font-size: 20px;
+  color: #32cd32;
+}
