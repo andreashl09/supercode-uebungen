@@ -8,7 +8,7 @@
   src: url("../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf");
 }
 
-html {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,13 +26,17 @@ header {
   margin-bottom: 200px;
 }
 
-header section article {
-  margin-top: 15px;
-  margin-left: 20px;
-  width: 3em;
+header section article p {
+  padding-top: 20px;
+  margin-left: 30px;
+  width: 50px;
   font-family: CustomMavenPro, Arial, Helvetica, sans-serif;
   color: grey;
   font-weight: 500;
+}
+
+header section article p {
+  text-indent: -10px;
 }
 
 header section:nth-of-type(2) {
@@ -56,15 +60,6 @@ header section h2 {
   text-align: center;
   color: white;
   font-weight: 100;
-}
-
-header section p {
-  font-size: 16px;
-  font-family: CustomMavenPro, Arial, Helvetica, sans-serif;
-  width: 237px;
-  text-align: center;
-  font-weight: 100;
-  margin: auto;
 }
 
 header section:nth-last-of-type(1):hover {
