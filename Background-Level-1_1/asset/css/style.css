@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Section h1 mit Hintergrundfarbe versehen */
+section h1 {
+  background-color: lightblue;
+}
+
+/* Section p mit Hintergrundfarbe versehen und ausrichten mit padding und margin */
+section p {
+  background-color: antiquewhite;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* article mit Hintergrundbild versehen - Hintergrundbildgröße verändern und repeat */
+article {
+  background-image: url("../img/tim-hufner-l0rMetCNZMg-unsplash.jpg");
+  background-size: 20vw;
+  border: 1px solid black;
+}
