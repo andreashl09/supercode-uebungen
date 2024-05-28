@@ -17,3 +17,8 @@
 Übungen vom 27.05.24
 
 - Box-Model-Level-3_4
+
+Übungen vom 28.05.24
+
+- Pseudo-Elemennts-Level-1_2
+- Pseudo-Elemennts-Level-1_4
