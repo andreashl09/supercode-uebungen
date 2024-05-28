@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1. Section mit Hintergrundbild versehen und Hintergrundbild verkleinern */
+section:nth-of-type(1) {
+  background-image: url("https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
+  background-size: 10vw;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section h1 {
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+article h2 {
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+article {
+  background-image: url("https://images.unsplash.com/photo-1603398749947-87246022fbf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-size: 10vw;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 10px;
+  padding-left: 50px;
+}
