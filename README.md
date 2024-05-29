@@ -28,3 +28,6 @@
 - Background_Level-3_1
 - Background_Level-3_2
 
+Übungen vom 29.05.24
+
+- CSS-Grundlagen-Project Work-responsibly
