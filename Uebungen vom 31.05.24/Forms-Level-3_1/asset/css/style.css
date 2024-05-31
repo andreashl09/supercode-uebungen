@@ -1,0 +1,27 @@
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    /* background-color: #cccccc;
+    padding: 0 100px 0 100px; */
+}
+
+/* ! HEADER */
+
+/* ! MAIN */
+
+/* ! FOOTER */

@@ -1,0 +1,92 @@
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #cccccc;
+    padding: 0 100px 0 100px; */
+}
+
+/* ! HEADER */
+
+/* ! MAIN */
+
+/* Form Basis */
+form {
+    padding-top: 50px;
+    margin: auto;
+    width: 500px;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Label mit rotem Stern versehen */
+#name-label::after,
+#mail-label::after,
+#nachricht-label::after {
+    content: "*";
+    color: red;
+    padding-left: 5px;
+}
+
+/* Inputfelder und Selects größe anpassen */
+#name {
+    width: 49%;
+}
+
+#mail,
+#select,
+#nachricht,
+#submit {
+    width: 99%;
+}
+
+/* Abstände und Ausrichtung  */
+input,
+select {
+    height: 30px;
+    margin-bottom: 12px;
+}
+
+/* Default Border-Radius entfernen und Border stylen */
+input,
+textarea,
+select {
+    border-radius: 0;
+    border: 1px solid gainsboro;
+    padding-left: 10px;
+}
+
+/* Textarea Höhe anpassen */
+textarea {
+    height: 20vh;
+}
+
+/* Submit Button stylen */
+#submit {
+    background-color: rgb(75, 152, 173);
+    color: white;
+    border: 0;
+}
+
+#submit:hover {
+    background-color: rgb(9, 26, 69);
+}
+
+/* ! FOOTER */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./asset/css/style.css" />
+        <title>Forms-Level-1_1</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header></header>
+            <!-- Main -->
+            <main>
+                <form action="">
+                    <!-- Input Vor- und Nachname -->
+                    <label for="name" id="name-label">Name</label>
+                    <input
+                        type="text"
+                        required
+                        id="name"
+                        placeholder="Vorname"
+                    />
+                    <input
+                        type="text"
+                        required
+                        id="name"
+                        placeholder="Nachname"
+                    />
+
+                    <!-- Input Mailadresse -->
+                    <label for="mail" id="mail-label">Email</label>
+                    <input type="email" required id="mail" />
+
+                    <!-- Select Field  -->
+                    <label for="">Thema</label>
+                    <select name="" id="select">
+                        <option value="advertise" id="select">Advertise</option>
+                    </select>
+
+                    <!-- Input Textfield -->
+                    <label for="nachricht" id="nachricht-label"
+                        >Nachricht</label
+                    >
+                    <textarea id="nachricht" required></textarea>
+
+                    <!-- Summit Button -->
+                    <input type="submit" value="Submit" id="submit" />
+                </form>
+            </main>
+            <!-- Footer -->
+            <footer></footer>
+        </div>
+    </body>
+</html>
