@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Custom_Questrial;
+    src: url("../fonts/Questrial/Questrial-Regular.ttf");
+}
+
 /* BASIC STYLING */
 
 * {
@@ -16,6 +21,7 @@ a {
 }
 
 .wrapper {
+    font-family: Arial, Helvetica, sans-serif;
     /* background-color: #cccccc;
     padding: 0 100px 0 100px; */
 }
@@ -23,5 +29,39 @@ a {
 /* ! HEADER */
 
 /* ! MAIN */
+
+main {
+    padding-top: 100px;
+}
+
+section {
+    width: 40vw;
+    height: 70vh;
+    margin: auto;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.289);
+
+}
+
+
+
+label {
+    display: block;
+}
+
+/* Kreis mit Background */
+.number-circle {
+    text-align: center;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: rgb(42, 136, 173);
+    color: white;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
 /* ! FOOTER */

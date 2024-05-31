@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="wrapper">
-        <!-- Header -->
-        <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./asset/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <header></header>
+            <!-- Main -->
+            <main>
+                <section>
+                    <article class="header-box">
+                        <h1>Sign Up Now!</h1>
+                        <p>Sign up and tell us what you think of the site!</p>
+                    </article>
+                    <form action="">
+                        <!-- Namen und Adresse Box -->
+                        <article class="input-box">
+                            <p class="number-circle">1</p>
+                            <span>First Name & Address</span>
+                            <div class="input-field">
+                                <label for="fullname"> Your full Name</label>
+                                <input type="text" id="fullname" />
+                                <label for="address"> Your full Name</label>
+                                <textarea id="address"></textarea>
+                            </div>
+                        </article>
 
-        </header>
-        <!-- Main -->
-        <main>
+                        <!-- Mail und Telefonnummer Box -->
+                        <article class="input-box">
+                            <p class="number-circle">2</p>
+                            <span>Email & Phone</span>
+                            <div class="input-field">
+                                <label for="mail"> Email Address</label>
+                                <input type="email" id="mail" />
+                                <label for="phone"> Phone Number</label>
+                                <input type="number" id="phone" />
+                            </div>
+                        </article>
 
-        </main>
-        <!-- Footer -->
-        <footer>
-
-        </footer>
-    </div>
-</body>
+                        <!-- Passwort Box -->
+                        <article class="input-box">
+                            <p class="number-circle">3</p>
+                            <span>Passwords</span>
+                            <div class="input-field">
+                                <label for="password"> Password</label>
+                                <input type="password" id="password" />
+                                <label for="confpassword">
+                                    Confirm Password</label
+                                >
+                                <input type="password" id="confpassword" />
+                            </div>
+                        </article>
+                        <input type="submit" value="Send" />
+                        <input type="checkbox" /><span
+                            >You agree to our Terms and Policy.</span
+                        >
+                    </form>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer></footer>
+        </div>
+    </body>
 </html>
