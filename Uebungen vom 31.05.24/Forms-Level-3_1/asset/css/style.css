@@ -3,6 +3,11 @@
     src: url("../fonts/Questrial/Questrial-Regular.ttf");
 }
 
+@font-face {
+    font-family: Custom_Martel;
+    src: url("../fonts/Martel/Martel-Regular.ttf");
+}
+
 /* BASIC STYLING */
 
 * {
@@ -31,20 +36,34 @@ a {
 /* ! MAIN */
 
 main {
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 section {
-    width: 40vw;
-    height: 70vh;
+    width: 50vw;
+    height: 90vh;
     margin: auto;
-    background-color: red;
     border-radius: 10px;
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.289);
-
 }
 
+.header-box {
+    background-color: rgb(42, 136, 174);
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    margin-bottom: 15px;
+}
 
+.header-box h1 {
+    font-family: Custom_Martel;
+    font-size: 2rem;
+    /* text-shadow: 0 0 7px black; */
+}
+
+.header-box p {
+    font-size: 14px;
+}
 
 label {
     display: block;
@@ -62,6 +81,79 @@ label {
     padding-top: 5px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.input-box span {
+    font-family: Custom_Questrial;
+    font-weight: bolder;
+    color: rgb(42, 136, 173);
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.designation {
+    margin-left: -15px;
+    margin-bottom: 15px;
+}
+
+.input-field {
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    margin: 0 20px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    color: gray;
+    font-size: 10px;
+    padding-left: 3px;
+    /* padding-bottom: 30px; */
+}
+
+.input-field input,
+.input-field textarea {
+    border-radius: 3px;
+    width: 100%;
+    border: 1px solid white;
+    height: 25px;
+    box-shadow: inset 0px 0px 2px rgb(130, 128, 128);
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 40px;
+    max-height: 100px;
+}
+
+.section-footer {
+    padding: 0 20px;
+    margin: auto;
+    /* text-align: right; */
+}
+
+.checkbox-label {
+    display: inline;
+    font-size: 8px;
+}
+
+.section-footer div {
+    margin-top: -17px;
+    text-align: right;
+}
+.section-footer label {
+    margin-left: 5px;
+}
+
+#submit {
+    background-color: rgb(42, 136, 174);
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    box-shadow: inset 1px 1px 2px rgb(156, 206, 227);
 }
 
 /* ! FOOTER */
