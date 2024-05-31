@@ -24,4 +24,11 @@ a {
 
 /* ! MAIN */
 
+fieldset {
+    margin: auto;
+    width: 95vw;
+    padding: 10px;
+}
+
+
 /* ! FOOTER */
