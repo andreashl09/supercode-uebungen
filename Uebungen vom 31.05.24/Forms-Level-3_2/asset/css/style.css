@@ -54,6 +54,7 @@ main article a {
     /* background-color: red; */
 }
 
+/* a Aktiv machen  */
 .active-signup {
     background-color: rgb(60, 181, 120);
     border-right: 2px solid rgb(193, 193, 193);
@@ -98,6 +99,19 @@ input {
     width: 99.3%;
 }
 
+.input-box {
+    text-align: right;
+}
+
+.input-box a {
+    display: inline-block;
+    color: green;
+    text-decoration: underline;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+/* Submit Button stylen */
 .submit-button {
     padding-left: 0;
     color: white;
@@ -106,6 +120,15 @@ input {
     height: 40px;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.submit-button:active {
+    /* border-top: 2px solid black;
+    border-left: 2px solid black; */
+    /* border-right: 1px solid rgb(123, 123, 123);
+    border-bottom: 1px solid rgb(123, 123, 123); */
+
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 /* ! MAIN */
 
