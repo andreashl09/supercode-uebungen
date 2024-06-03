@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Custom_Lato;
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+    font-weight: 200;
+}
+
 /* BASIC STYLING */
 
 * {
@@ -16,11 +22,72 @@ a {
 }
 
 .wrapper {
+    font-family: Custom_Lato;
     /* background-color: #cccccc;
     padding: 0 100px 0 100px; */
 }
 
 /* ! HEADER */
+.navigation-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: baseline;
+}
+
+.navigation-top img {
+    height: 24px;
+    margin-right: 30px;
+}
+
+.navigation-top div {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-left: -50vw;
+}
+
+.navigation-top li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* Section mit Background-Color versehen */
+
+.background {
+    background-color: rgba(217, 232, 229, 1);
+    width: 100vw;
+    height: 100vh;
+    padding: 5vw;
+}
+
+.gallery-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-rings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 70vw;
+}
+
+.gallery-rings img {
+    width: 23vw;
+}
+
+.gallery-box h2 {
+    margin-left: 40px;
+}
 
 /* ! MAIN */
 

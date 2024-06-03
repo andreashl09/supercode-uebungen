@@ -107,6 +107,7 @@ main h2 {
 
 .readmore {
     background-color: rgb(116, 92, 250);
+    border: 2px solid rgb(116, 92, 250);
 }
 
 .download {
