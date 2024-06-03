@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Custom_Raleway;
+    src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    font-family: Custom_Raleway, Arial, Helvetica, sans-serif;
+    /* background-color: #cccccc;
+    padding: 0 100px 0 100px; */
+}
+
+/* ! HEADER */
+
+header {
+    padding: 15px 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    font-weight: 200;
+}
+
+.link-box {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    font-size: 10px;
+    /* width: 12vw; */
+    list-style: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.logo:hover,
+.link-box a:hover {
+    color: rgba(77, 77, 136);
+    transition: 0.5s;
+    text-shadow: 0 0 2px rgba(77, 77, 136, 0.3);
+}
+/* ! MAIN */
+
+.background {
+    background-image: url("../img/gatis-vilaks-nWBkBrhDddI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+}
+
+main h2 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.background p {
+    margin-bottom: 15px;
+}
+
+.background div {
+    display: flex;
+    gap: 1%;
+    /* width: 40vw; */
+    justify-content: center;
+}
+
+.readmore,
+.download {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    width: 200px;
+    color: white;
+}
+
+.readmore {
+    background-color: rgb(116, 92, 250);
+}
+
+.download {
+    border: 2px solid white;
+}
+
+.readmore:hover {
+    transition: 0.7s;
+    background-color: rgb(97, 77, 208);
+}
+
+.download:hover {
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+}
+/* ! FOOTER */
