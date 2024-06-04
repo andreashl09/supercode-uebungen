@@ -1,0 +1,185 @@
+@import url("//db.onlinewebfonts.com/c/f05f148ec6596f0b75375fa566aaf1fe?family=Bely");
+
+@font-face {
+    font-family: Prixoma-Regular;
+    src: url("../fonts/proxima-nova-2/Mark_Simonson_Proxima_Nova_Regular.otf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Prixoma-bold;
+    src: url("../fonts/proxima-nova-2/Mark_Simonson_Proxima_Nova_Semibold.otf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Prixoma-thin;
+    src: url("../fonts/proxima-nova-2/Mark_Simonson_Proxima_Nova_Thin.otf")
+        format("opentype");
+}
+
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    font-family: Prixoma-Regular;
+    /* font-family: Bely; */
+    font-size: 62.5%;
+}
+
+.wrapper {
+    /* background-color: #cccccc;
+    padding: 0 100px 0 100px; */
+}
+
+/* ! HEADER */
+
+.header-navigation {
+    padding: 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.logo-tag {
+    display: flex;
+    align-items: center;
+    width: 320px;
+}
+
+.logo-tag {
+    font-family: Prixoma-bold;
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+nav a {
+    margin-right: 25px;
+    font-size: 2rem;
+}
+
+.request {
+    color: rgba(113, 168, 148, 1);
+}
+
+.header-navigation img {
+    margin-right: 5%;
+}
+
+.welcome {
+    background: url("../img/Illustration.png"), url("../img/blob-shape\ 1.png");
+    background-position: top right, top right;
+    background-repeat: no-repeat, no-repeat;
+    width: 100vw;
+    height: 78vh;
+    padding-left: 60px;
+}
+
+.welcome article {
+    width: 40vw;
+    padding-top: 130px;
+}
+
+.font-bely {
+    font-family: Bely, Arial, Helvetica, sans-serif;
+    font-size: 4.8rem;
+}
+
+.welcome h1 {
+    font-size: 6.4rem;
+    line-height: 80px;
+    margin-bottom: 24px;
+}
+
+.text-under-h1 {
+    font-size: 2.4rem;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.btn-angular {
+    padding: 20px 24px;
+    width: 220px;
+    color: aliceblue;
+    background-color: rgba(113, 168, 148, 1);
+    border-radius: 8px;
+    font-size: 1.8rem;
+}
+
+/* ! MAIN */
+
+.first-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px;
+}
+.first-section h2 {
+    font-size: 4.8rem;
+    margin-bottom: 24px;
+}
+
+.text-under-h2 {
+    width: 55vw;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 100;
+    font-family: Prixoma-thin;
+    margin: 48px;
+    letter-spacing: -2%;
+}
+
+.reimagining {
+    display: flex;
+    gap: 24px;
+}
+
+.reimagining-box {
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    border-radius: 8px;
+    margin-bottom: 160px;
+}
+
+.reimagining-box img {
+    width: 100px;
+    margin-bottom: 24px;
+}
+
+.reimagining-box h3 {
+    font-size: 2.4rem;
+    font-family: Prixoma-bold;
+    margin-bottom: 16px;
+}
+
+.text-under-h3 {
+    font-family: Prixoma-thin;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 26px;
+}
+/* ! FOOTER */
