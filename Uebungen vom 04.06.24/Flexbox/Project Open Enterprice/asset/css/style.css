@@ -57,7 +57,7 @@ html {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .logo-tag {
@@ -89,8 +89,9 @@ nav a {
     background: url("../img/Illustration.png"), url("../img/blob-shape\ 1.png");
     background-position: top right, top right;
     background-repeat: no-repeat, no-repeat;
+    /* background-size: 70%, 70%; */
     width: 100vw;
-    height: 78vh;
+    height: 87vh;
     padding-left: 60px;
 }
 
@@ -124,6 +125,10 @@ nav a {
     border-radius: 8px;
     font-size: 1.8rem;
 }
+
+/* header {
+    margin-bottom: 100px;
+} */
 
 /* ! MAIN */
 
