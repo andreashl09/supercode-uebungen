@@ -229,7 +229,7 @@ nav a {
 }
 
 .members-box h4 {
-    font-family: Novel-Light;
+    font-family: Novel-bold;
     font-size: 3.2rem;
     font-weight: 900;
     margin-bottom: 15px;
@@ -353,9 +353,10 @@ nav a {
 
 .background-line {
     background: url("../img/Divider.png");
-    height: 75px;
+    height: 90px;
     background-repeat: no-repeat;
     margin-bottom: 45px;
+    background-size: 100vw;
 }
 
 .bye {
@@ -379,3 +380,11 @@ nav a {
 }
 
 /* ! FOOTER */
+
+.footer-navigation {
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
