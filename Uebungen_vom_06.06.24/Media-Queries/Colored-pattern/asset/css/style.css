@@ -18,10 +18,118 @@ a {
 .wrapper {
     /* background-color: #cccccc;
     padding: 0 100px 0 100px; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+p {
+    text-align: center;
 }
 
 /* ! HEADER */
+header {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px 0;
+    /* margin-bottom: 5px; */
+}
 
 /* ! MAIN */
 
+aside {
+    background-color: rgb(153, 153, 255);
+    padding: 20px;
+    /* margin-bottom: 5px; */
+}
+
+.article1 {
+    background-color: rgb(153, 255, 187);
+}
+
+.article2 {
+    background-color: rgb(250, 191, 127);
+}
+
+.article3 {
+    background-color: rgb(247, 129, 192);
+}
+
+.article4 {
+    background-color: rgb(215, 255, 128);
+}
+
+article p {
+    padding: 20px;
+    /* margin-bottom: 5px; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main div {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
+}
+
+main div article {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+main div article div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100vw;
+}
+
 /* ! FOOTER */
+
+footer {
+    background-color: rgb(132, 163, 224);
+    padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    main div {
+        /* flex-direction: row-reverse; */
+        justify-content: center;
+        gap: 5px;
+        /* width: 100vw; */
+    }
+
+    /* main div article {
+        width: 100vw;
+    } */
+
+    main div article div {
+        flex-direction: row;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    main {
+        flex-direction: row-reverse;
+    }
+
+    .article1,
+    .article2,
+    .article3,
+    .article4 {
+        flex-grow: 1;
+    }
+    main aside {
+        flex-grow: 3;
+    }
+}
