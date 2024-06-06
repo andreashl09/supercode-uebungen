@@ -231,11 +231,74 @@ footer {
         display: block;
     }
 
+    /* header {
+        height: 100vh;
+    } */
     h2 {
         display: block;
     }
 
     .two-div {
         display: flex;
+    }
+
+    .welcome-image {
+        width: 50vw;
+        background-position: 0 50%;
+    }
+
+    .welcome-color {
+        display: flex;
+        width: 50vw;
+        background-color: #df8480;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .welcome-color p {
+        color: white;
+        font-size: 36px;
+        font-weight: 900;
+        text-align: right;
+        width: 50%;
+        align-self: flex-end;
+    }
+    .welcome-image h3,
+    .welcome-image p {
+        display: none;
+    }
+
+    h2 {
+        font-family: "rocksalt";
+        font-size: 24px;
+        text-align: center;
+    }
+
+    main h3 {
+        background-color: white;
+        color: #df8480;
+        font-size: 48px;
+        font-weight: 900;
+    }
+
+    .content {
+        flex-direction: row;
+        padding: 0 100px;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 16px;
+        width: 30%;
+        height: 25vh;
+    }
+
+    .text-description {
+        /* width: 270px; */
     }
 }
