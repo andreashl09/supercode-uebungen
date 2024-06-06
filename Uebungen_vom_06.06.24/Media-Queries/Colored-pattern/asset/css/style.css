@@ -85,7 +85,7 @@ main div article div {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 /* ! FOOTER */
