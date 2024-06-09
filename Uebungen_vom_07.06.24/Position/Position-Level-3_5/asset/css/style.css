@@ -1,0 +1,145 @@
+/* BASIC STYLING */
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+}
+
+/* ! HEADER */
+header {
+    background-position: 0 -100px;
+    background-image: url("../img/header-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100vw; */
+    height: 80vh;
+}
+
+header p:nth-of-type(1) {
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    top: 270px;
+    left: 176px;
+}
+
+header p:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+/* ! MAIN */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px 275px 16px 50px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+    font-size: 32px;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.locations {
+    padding-top: 220px;
+}
+main h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 36px;
+}
+
+.stripe {
+    margin: auto;
+    width: 100px;
+    background-color: black;
+    height: 5px;
+    margin-bottom: 8px;
+}
+
+.gallery_img {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.images img {
+    flex-grow: 1;
+}
+
+.tour_dates {
+    padding: 100px 148px;
+}
+
+.tour_dates h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.tour_dates p {
+    color: rgba(51, 51, 51, 1);
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.red_text {
+    color: rgba(255, 0, 0, 1);
+}
+
+.green_text {
+    color: rgba(0, 128, 0, 1);
+}
+/* ! FOOTER */
