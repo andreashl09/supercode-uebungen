@@ -29,11 +29,9 @@ li {
 
 /* ! HEADER */
 header {
-    background-position: 0 -100px;
     background-image: url("../img/header-img.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* width: 100vw; */
     height: 80vh;
 }
 
