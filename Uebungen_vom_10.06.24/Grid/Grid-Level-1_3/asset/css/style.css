@@ -16,10 +16,38 @@ a {
 }
 
 .wrapper {
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 8vh 84vh 8vh;
+    color: white;
+    gap: 2px;
 }
 
 /* ! HEADER */
+header {
+    background-color: blue;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
 
 /* ! MAIN */
+main {
+    background-color: red;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
 
+/* ! ASIDE */
+
+aside {
+    background-color: green;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
 /* ! FOOTER */
+footer {
+    background-color: purple;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
