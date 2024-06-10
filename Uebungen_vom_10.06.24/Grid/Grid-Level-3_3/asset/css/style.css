@@ -70,41 +70,53 @@ header article {
 /* ! MAIN */
 
 main {
+    /* padding: 1%; */
     display: grid;
-    grid-template-columns: 20vw 20vw 30vw 25vw;
-    grid-template-rows: 7vh 20vh 30vh 40vh;
+    grid-template-columns: 25% 25% 30% 20%;
+    grid-template-rows: 7vh 15vh 30vh 45vh;
     grid-template-areas:
         "headline headline headline aside"
         "new1 new2 image aside"
         "new3 new4 image aside"
         "new5 new6 image aside";
+    /* gap: 1%; */
 }
 
 h1 {
     grid-area: headline;
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
 }
 
-aside {
+.aside {
+    overflow: auto;
     grid-area: aside;
 }
 
 .new1 {
     grid-area: new1;
+    padding: 5px;
 }
 .new2 {
     grid-area: new2;
+    padding: 5px;
 }
 .new3 {
     grid-area: new3;
+    padding: 5px;
 }
 .new4 {
     grid-area: new4;
+    padding: 5px;
 }
 .new5 {
     grid-area: new5;
+    padding: 5px;
 }
 .new6 {
     grid-area: new6;
+    padding: 5px;
 }
 
 .image {
@@ -122,26 +134,128 @@ h3 {
 }
 
 /* ! ASIDE */
-aside {
+.aside {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 6%;
+    justify-content: start;
+    /* width: 80; */
 }
 
-aside h3 {
+.aside h3 {
     font-size: 18px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .sponsor1 {
-    font-size: 50px;
-    padding: 25px 0;
-}
-.sponsor2,
-.sponsor1 {
-    border: 2px solid black;
+    font-size: clamp(1rem, 4vw, 2rem);
+    padding: 5%;
+    border: 2px double black;
     text-align: center;
+    margin-bottom: 5%;
+    padding: 10%;
 }
 
+.sponsor2 {
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    border: 2px double black;
+    text-align: center;
+    margin-bottom: 5%;
+    padding: 6%;
+    /* flex-basis: 20%; */
+}
+
+.sponsor2 h5 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.sponsor3 {
+    text-align: center;
+    border: 2px double black;
+    padding: 6%;
+    /* flex-basis: 20%; */
+}
+
+.sponsor3 img {
+    width: 300px;
+    height: auto;
+}
+
+a {
+    font-size: clamp(0.5rem, 1vw, 2rem);
+    color: #737b80;
+    border-bottom: 1px solid #737b80;
+}
+
+.image p {
+    font-family: "cormorant-italic";
+}
 /* ! FOOTER */
+
+@media only screen and (max-width: 992px) {
+    main {
+        grid-template-columns: 40% 40% 20%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "headline headline headline"
+            "new1 new2 aside"
+            "new3 new4 aside"
+            "new5 new6 aside"
+            "image image image  ";
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .aside h3 {
+        padding-top: 0;
+    }
+
+    .sponsor1 {
+        padding: 18%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "headline headline"
+            "new1 aside"
+            "new2 aside"
+            "new3 aside"
+            "new4 aside"
+            "new5 aside"
+            "new6 ."
+            "image.";
+    }
+
+    .aside {
+        position: sticky;
+        top: -20px;
+    }
+
+    .aside h3 {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    article p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h4,
+    h3 {
+        font-size: 20px;
+    }
+}
