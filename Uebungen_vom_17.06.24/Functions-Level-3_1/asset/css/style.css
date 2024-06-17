@@ -1,0 +1,80 @@
+/* BASIC STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+}
+
+/* ! HEADER */
+
+/* ! MAIN */
+
+main {
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+div:hover {
+    box-shadow: 1px 1px 4px black;
+}
+
+div {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+div:nth-of-type(1) {
+    background: rgb(122, 9, 105);
+    background: linear-gradient(
+        55deg,
+        rgba(122, 9, 105, 1) 50%,
+        rgba(48, 156, 95, 1) 50%
+    );
+}
+div:nth-of-type(2) {
+    background: rgb(80, 76, 125, 1);
+    background: linear-gradient(
+        55deg,
+        rgb(80, 76, 125, 1) 50%,
+        rgb(222, 183, 75, 1) 50%
+    );
+}
+div:nth-of-type(3) {
+    background: rgb(6, 3, 82);
+    background: linear-gradient(
+        55deg,
+        rgb(6, 3, 82) 50%,
+        rgb(207, 107, 11) 50%
+    );
+}
+div:nth-of-type(4) {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        55deg,
+        rgb(2, 0, 36) 50%,
+        rgb(66, 212, 255) 50%
+    );
+}
+
+/* ! FOOTER */
