@@ -24,20 +24,24 @@ function kalorienBerechnen() {
             calorien =
                 655.1 + 9.6 * weightInput + 1.8 * heightInput - 4.7 * ageInput;
         }
-        calorien = (Math.round(calorien));
+        calorien = Math.round(calorien);
         console.log(calorien);
     } else {
         window.alert("Formular vollständig ausfüllen");
     }
 
-    let sumCalorien = calorien * palFactor;
+    let sumCalorien = Math.round(calorien * palFactor);
     const kJFactor = 4.1868;
 
-    const kcalOutput = document.querySelector(".kcal-grund").value;
-    const kcalAllOutput = document.querySelector(".kcal-gesamt");
-    const kjOutput = document.querySelector(".kj-grund");
-    const kjAllOutput = document.querySelector(".kj-gesamt");
+    if (calorien != 0) {
+        const kcalOutput = document.querySelector(".kcal-grund");
+        const kcalAllOutput = document.querySelector(".kcal-gesamt");
+        const kjOutput = document.querySelector(".kj-grund");
+        const kjAllOutput = document.querySelector(".kj-gesamt");
 
-
-    kcalOutput.innerText = `${calorien}`;
+        kcalOutput.innerText = `${calorien}`;
+        kcalAllOutput.innerText = `${sumCalorien}`;
+        kjOutput.innerText = `${Math.round(calorien * kJFactor)}`;
+        kjAllOutput.innerText = `${Math.round(sumCalorien * kJFactor)}`;
+    }
 }
