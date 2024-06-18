@@ -1,0 +1,43 @@
+function kalorienBerechnen() {
+    // Input-Felder auslesen
+    const heightInput = Number(document.querySelector("#groesse").value);
+    const ageInput = Number(document.querySelector("#alter").value);
+    const weightInput = Number(document.querySelector("#gewicht").value);
+
+    // Radio auslesen
+    const genderRadio = document.querySelector(
+        "input[name='geschlecht']:checked"
+    ).value;
+
+    // Pal-Faktor aus Select Option auslesen
+    const palFactor = Number(document.querySelector("option:checked").value);
+
+    // Variable Kalorien Grundumsatz
+    let calorien;
+
+    if (heightInput != 0 && ageInput != 0 && weightInput != 0) {
+        // Kalorienbedarf für männlich oder weiblich ausrechnen
+        if (genderRadio === "man") {
+            calorien =
+                66.47 + 13.7 * weightInput + 5 * heightInput - 6.8 * ageInput;
+        } else {
+            calorien =
+                655.1 + 9.6 * weightInput + 1.8 * heightInput - 4.7 * ageInput;
+        }
+        calorien = (Math.round(calorien));
+        console.log(calorien);
+    } else {
+        window.alert("Formular vollständig ausfüllen");
+    }
+
+    let sumCalorien = calorien * palFactor;
+    const kJFactor = 4.1868;
+
+    const kcalOutput = document.querySelector(".kcal-grund").value;
+    const kcalAllOutput = document.querySelector(".kcal-gesamt");
+    const kjOutput = document.querySelector(".kj-grund");
+    const kjAllOutput = document.querySelector(".kj-gesamt");
+
+
+    kcalOutput.innerText = `${calorien}`;
+}
