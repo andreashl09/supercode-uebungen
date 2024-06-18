@@ -25,7 +25,6 @@ function kalorienBerechnen() {
                 655.1 + 9.6 * weightInput + 1.8 * heightInput - 4.7 * ageInput;
         }
         calorien = Math.round(calorien);
-        console.log(calorien);
     } else {
         window.alert("Formular vollständig ausfüllen");
     }
@@ -44,4 +43,15 @@ function kalorienBerechnen() {
         kjOutput.innerText = `${Math.round(calorien * kJFactor)}`;
         kjAllOutput.innerText = `${Math.round(sumCalorien * kJFactor)}`;
     }
+}
+
+function clearAll() {
+    document.querySelector("#groesse").value = "";
+    document.querySelector("#alter").value = "";
+    document.querySelector("#gewicht").value = "";
+    document.querySelectorAll("tabelle p").value = "0";
+    // document.querySelector(".kcal-grund").value = "0";
+    // document.querySelector(".kcal-gesamt").value = "0";
+    // document.querySelector(".kj-grund").value = "0";
+    // document.querySelector(".kj-gesamt").value = "0";
 }

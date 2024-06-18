@@ -15,11 +15,133 @@ a {
     color: black;
 }
 
-.wrapper {
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(63, 63, 63);
 }
 
 /* ! HEADER */
 
 /* ! MAIN */
+
+section {
+    background-color: rgb(194, 193, 193);
+    width: 35vw;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 0 4px black;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+.user-data label {
+    display: block;
+}
+
+.user-data input {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid gray;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#women,
+#men {
+    margin-right: 5px;
+}
+
+.auswahl {
+    margin-bottom: 10px;
+}
+article select,
+article button {
+    display: block;
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+article select {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgb(138, 43, 227);
+    border: none;
+    color: white;
+
+    height: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.tabelle {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        ". kcal kj" "grundumsatz kcal-grund kj-grund"
+        "gesamtumsatz kcal-gesamt kj-gesamt";
+    /* background-color: rgb(159, 87, 222); */
+    color: white;
+    margin-bottom: 30px;
+}
+
+.background {
+    background-color: rgb(159, 87, 222);
+}
+.tabelle p {
+    padding: 10px;
+}
+
+.kcal {
+    grid-area: kcal;
+    background-color: rgb(138, 43, 227);
+    border-top-left-radius: 5px;
+}
+
+.kj {
+    background-color: rgb(138, 43, 227);
+    grid-area: kj;
+    border-top-right-radius: 5px;
+}
+
+.grundumsatz {
+    grid-area: grundumsatz;
+    border-top-left-radius: 5px;
+}
+
+.background-grid {
+    background-color: rgb(148, 53, 236);
+}
+.gesamtumsatz {
+    grid-area: gesamtumsatz;
+    border-bottom-left-radius: 5px;
+}
+
+.kcal-grund {
+    grid-area: kcal-grund;
+}
+.kcal-gesamt {
+    grid-area: kcal-gesamt;
+}
+.kj-grund {
+    grid-area: kj-grund;
+}
+.kj-gesamt {
+    grid-area: kj-gesamt;
+    border-bottom-right-radius: 5px;
+}
 
 /* ! FOOTER */

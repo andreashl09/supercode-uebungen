@@ -11,27 +11,31 @@
             <section>
                 <article>
                     <h1>Kalorienrechner</h1>
-                    <label for="groesse">Körpergröße</label>
-                    <input type="number" id="groesse" />
-                    <label for="alter">Alter</label>
-                    <input type="number" id="alter" />
-                    <label for="gewicht">Gewicht</label>
-                    <input type="number" id="gewicht" />
-                    <input
-                        type="radio"
-                        name="geschlecht"
-                        id="man"
-                        value="man"
-                        checked
-                    />
-                    <label for="man">männlich</label>
-                    <input
-                        type="radio"
-                        name="geschlecht"
-                        id="women"
-                        value="woman"
-                    />
-                    <label for="women">weiblich</label>
+                    <div class="user-data">
+                        <label for="groesse">Körpergröße in cm</label>
+                        <input type="number" id="groesse" />
+                        <label for="alter">Alter</label>
+                        <input type="number" id="alter" />
+                        <label for="gewicht">Gewicht</label>
+                        <input type="number" id="gewicht" />
+                    </div>
+                    <div class="auswahl">
+                        <input
+                            type="radio"
+                            name="geschlecht"
+                            id="man"
+                            value="man"
+                            checked
+                        />
+                        <label for="man">männlich</label>
+                        <input
+                            type="radio"
+                            name="geschlecht"
+                            id="women"
+                            value="woman"
+                        /><label for="women">weiblich</label>
+                    </div>
+
                     <select name="" id="">
                         <option value="0.95">schlafen</option>
                         <option value="1.2">nur sitzend oder liegend</option>
@@ -48,18 +52,23 @@
                             körperlich anstrengende Arbeit
                         </option>
                     </select>
-                    <button onclick="kalorienBerechnen()">Berechnen</button>
+                    <button class="btn" onclick="kalorienBerechnen()">
+                        Berechnen
+                    </button>
                 </article>
-                <article>
+                <article class="tabelle">
                     <p class="kcal">kcal</p>
                     <p class="kj">kJ</p>
-                    <p class="grundumsatz">Grundumsatz</p>
-                    <p class="Gesamtumsatz">Gesamtumsatz</p>
-                    <p class="kcal-grund"></p>
-                    <p class="kcal-gesamt"></p>
-                    <p class="kj-grund"></p>
-                    <p class="kj-gesamt"></p>
+                    <p class="grundumsatz background">Grundumsatz</p>
+                    <p class="gesamtumsatz background">Gesamtumsatz</p>
+                    <p class="kcal-grund background-grid">0</p>
+                    <p class="kcal-gesamt background-grid">0</p>
+                    <p class="kj-grund background-grid">0</p>
+                    <p class="kj-gesamt background-grid">0</p>
                 </article>
+                <button class="btn" type="button" onclick="clearAll()">
+                    Clear all
+                </button>
             </section>
         </main>
         <script src="./asset/js/script.js"></script>
