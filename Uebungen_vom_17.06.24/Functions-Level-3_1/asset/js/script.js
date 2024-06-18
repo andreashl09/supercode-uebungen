@@ -7,7 +7,7 @@ function greenAndPurple() {
 }
 function bluepurpleAndYellow() {
     mainBox.style.backgroundColor = "#504c7d";
-    h1Html.style.color = "#7b096a";
+    h1Html.style.color = "#dfb74b";
 }
 function blackAndDarkorange() {
     mainBox.style.backgroundColor = "#020024";

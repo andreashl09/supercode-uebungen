@@ -25,6 +25,7 @@ a {
 main {
     text-align: center;
     height: 100vh;
+    padding-top: 50px;
 }
 
 h1 {
